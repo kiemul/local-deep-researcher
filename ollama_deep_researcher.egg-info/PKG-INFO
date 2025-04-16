@@ -17,7 +17,10 @@ Requires-Dist: openai>=1.12.0
 Requires-Dist: langchain_openai>=0.3.9
 Requires-Dist: httpx>=0.28.1
 Requires-Dist: markdownify>=0.11.0
+<<<<<<< HEAD
 Requires-Dist: python-dotenv==1.0.1
+=======
+>>>>>>> d714a59ac53f52963004b992c8b9e0e7b7ab7f30
 Provides-Extra: dev
 Requires-Dist: mypy>=1.11.1; extra == "dev"
 Requires-Dist: ruff>=0.6.1; extra == "dev"
@@ -42,11 +45,19 @@ See it in action or build it yourself? Check out these helpful video tutorials:
 
 Clone the repository:
 ```shell
+<<<<<<< HEAD
 git clone https://github.com/langchain-ai/local-deep-researcher.git
 cd local-deep-researcher
 ```
 
 Then edit the `.env` file to customize the environment variables according to your needs. These environment variables control the model selection, search tools, and other configuration settings. When you run the application, these values will be automatically loaded via `python-dotenv` (because `langgraph.json` point to the "env" file).
+=======
+git clone https://github.com/langchain-ai/ollama-deep-researcher.git
+cd ollama-deep-researcher
+```
+
+Copy the `.env.example` file to `.env` and set the environment variables to your desired values, as noted below.
+>>>>>>> d714a59ac53f52963004b992c8b9e0e7b7ab7f30
 ```shell
 cp .env.example .env
 ```
